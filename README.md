@@ -24,6 +24,16 @@
 ---
 
 ## 📊 Performance Results
+## 🎯 Quick Stats
+
+┌─────────────────────────────────────────┐
+│ ⭐ 96.7% Accuracy (EASY mode) │
+│ ⭐ 95.7% Accuracy (MEDIUM mode) │
+│ ⭐ 94.5% Accuracy (HARD mode) │
+│ ⭐ 25% improvement from baseline │
+│ ⭐ Production-ready quality │
+└─────────────────────────────────────────┘
+
 
 ### Accuracy by Difficulty Level
 
@@ -221,6 +231,8 @@ For complete working examples, see:
 6. **Iterate:** Fine-tuned for additional 2.9% improvement
 
 ---
+
+
 
 ## 📊 Comparison to Alternatives
 
