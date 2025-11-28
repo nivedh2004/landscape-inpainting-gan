@@ -8,11 +8,7 @@ Complete technical documentation of the Landscape Image Inpainting GAN architect
 
 The system consists of three main components:
 
-## 📊 System Overview
-
-The system consists of three main components:
-
-
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │                   Input Image (256×256×3 RGB)                   │
 └─────────────────────────────────────────────────────────────────┘
@@ -59,7 +55,7 @@ The system consists of three main components:
 │  -  Generator learns to fool discriminator                      │
 │  -  Discriminator learns to detect fakes                        │
 └─────────────────────────────────────────────────────────────────┘
-
+```
 
 **Training Flow:**
 1. **Input:** Original image + mask → 4-channel input
@@ -75,9 +71,7 @@ The system consists of three main components:
 
 
 
----
 
----
 
 ## 🎨 Generator Architecture (U-Net)
 
