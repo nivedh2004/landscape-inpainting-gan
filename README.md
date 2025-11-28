@@ -182,7 +182,6 @@ Status: Deployment ready
 
 
 ![Training Comparison](results/training_comparison.png)
-*Left: Failed training with discriminator dominance | Right: Successful balanced training*
 
 ---
 
@@ -269,13 +268,9 @@ landscape-inpainting-gan/
 ├── LICENSE # MIT License
 │
 ├── notebooks/
-│ ├── 01_data_preprocessing.ipynb # Data loading and preprocessing
-│ ├── 02_model_training.ipynb # Full training pipeline
-│ ├── 03_model_finetuning.ipynb # Fine-tuning phase
-│ └── 04_testing_inference.ipynb # Testing and results
+│ ├── image_inpainting.ipynb # Including both old and new architecture
 │
 ├── results/
-│ ├── training_comparison.png # Old vs New training charts
 │ ├── difficulty_comparison.png # Easy/Medium/Hard results
 │ ├── easy_example.jpg # Example results
 │ ├── medium_example.jpg
