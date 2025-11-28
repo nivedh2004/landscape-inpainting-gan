@@ -26,14 +26,16 @@
 ## 📊 Performance Results
 ## 🎯 Quick Stats
 
-┌─────────────────────────────────────────┐
-│ ⭐ 96.7% Accuracy (EASY mode) │
-│ ⭐ 95.7% Accuracy (MEDIUM mode) │
-│ ⭐ 94.5% Accuracy (HARD mode) │
-│ ⭐ 25% improvement from baseline │
-│ ⭐ Production-ready quality │
-└─────────────────────────────────────────┘
+<div align="center">
 
+![Accuracy](https://img.shields.io/badge/EASY-96.7%25%20Accuracy-brightgreen?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/MEDIUM-95.7%25%20Accuracy-green?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/HARD-94.5%25%20Accuracy-yellowgreen?style=for-the-badge)
+
+![Improvement](https://img.shields.io/badge/Improvement-+25%25%20from%20baseline-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)
+
+</div>
 
 ### Accuracy by Difficulty Level
 
@@ -220,9 +222,8 @@ cv2.imwrite('output.jpg', result * 255)
 
 ### Colab Notebook
 
-For complete working examples, see:
-- [`notebooks/training.ipynb`](notebooks/training.ipynb) - Full training pipeline
-- [`notebooks/inference.ipynb`](notebooks/inference.ipynb) - Inference and testing
+For complete working example, see:
+- [`notebooks/inference.ipynb`](notebooks/landscape_image_inpainting.ipynb) 
 
 ---
 
@@ -268,7 +269,7 @@ landscape-inpainting-gan/
 ├── LICENSE # MIT License
 │
 ├── notebooks/
-│ ├── image_inpainting.ipynb # Including both old and new architecture
+│ ├── landscape_image_inpainting.ipynb # Including both old and new architecture
 │
 ├── results/
 │ ├── difficulty_comparison.png # Easy/Medium/Hard results
