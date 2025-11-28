@@ -293,7 +293,7 @@ landscape-inpainting-gan/
 ## 🔧 Installation
 
 Clone repository
-git clone https://github.com/yourusername/landscape-inpainting-gan.git
+git clone https://github.com/nivedh2004/landscape-inpainting-gan.git
 cd landscape-inpainting-gan
 
 Install dependencies
