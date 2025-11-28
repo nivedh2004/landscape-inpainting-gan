@@ -223,7 +223,7 @@ cv2.imwrite('output.jpg', result * 255)
 ### Colab Notebook
 
 For complete working example, see:
-- [`notebooks/inference.ipynb`](notebooks/landscape_image_inpainting.ipynb) 
+- [`notebooks/landscape_image_inpainting.ipynb`](notebooks/landscape_image_inpainting.ipynb) 
 
 ---
 
