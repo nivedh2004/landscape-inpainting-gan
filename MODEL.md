@@ -9,7 +9,7 @@
 
 ## Download Link
 
-🔗 **[Click here to download model from Google Drive]((https://drive.google.com/file/d/1MF3IwvqQhG0_afcGP5Rcrg9i_sKJVDDu/view?usp=sharing))**
+🔗 **Click here to download model from Google Drive:[https://drive.google.com/file/d/1MF3IwvqQhG0_afcGP5Rcrg9i_sKJVDDu/view?usp=sharing]**
 
 ## How to Load
 
