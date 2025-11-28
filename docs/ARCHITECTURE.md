@@ -101,7 +101,7 @@ Output: 256×256×3 (RGB image)
 **1. Why Skip Connections?**
 Without skips: Information loss during downsampling
 With skips: Low-level details preserved and combined with high-level features
-Result: Better ---ure and edge preservation
+Result: Better texture and edge preservation
 
 ---
 
@@ -129,7 +129,7 @@ PatchGAN chosen for:
 - **Local realism focus** - evaluates 70×70 patches instead of whole image
 - **Fewer parameters** than full-image discriminator
 - **Better gradient flow** - multiple patches provide stronger signal
-- **High-frequency detail** - forces generator to match ---ures
+- **High-frequency detail** - forces generator to match textures
 
 ### Detailed Architecture
 
@@ -161,7 +161,7 @@ Full Image Discriminator:
 
 Single classification decision
 
-Can ignore local ---ure details
+Can ignore local texture details
 
 1 gradient signal per image
 
@@ -169,17 +169,17 @@ PatchGAN (70×70):
 
 1,024 classification decisions (32×32 patches)
 
-Must evaluate local ---ure quality
+Must evaluate local texture quality
 
 1,024 gradient signals per image
-Result: 1000× stronger supervision for ---ure quality
+Result: 1000× stronger supervision for texture quality
 
 ---
 
 **2. Why 70×70 Receptive Field?**
 Too small (16×16): Misses global structure
 Too large (286×286): Acts like full discriminator
-70×70: Sweet spot - captures local con--- + ---ures
+70×70: Sweet spot - captures local con--- + textures
 
 ---
 
@@ -256,7 +256,7 @@ Result: L1 produces crisper inpainting
 
 ### 3. Perceptual Loss (VGG19)
 
-**Purpose:** Match high-level features (---ures, patterns)
+**Purpose:** Match high-level features (textures, patterns)
 
 **Architecture:**
 VGG19 Pre-trained on ImageNet
@@ -279,8 +279,8 @@ L_perceptual = mean(|features_target - features_generated|)
 **Weight:** 1.0
 
 **Why it matters:**
-Without: Correct pixels but wrong ---ures (e.g., smooth grass)
-With: ---ures match semantic content (e.g., rough grass)
+Without: Correct pixels but wrong textures (e.g., smooth grass)
+With: textures match semantic content (e.g., rough grass)
 
 ---
 
@@ -492,7 +492,7 @@ Throughput: ~20 images/second
 | Choice | Alternative | Why Chosen |
 |--------|-------------|------------|
 | U-Net | ResNet encoder-decoder | Skip connections preserve spatial info |
-| PatchGAN | Full image discriminator | Better ---ure quality, fewer params |
+| PatchGAN | Full image discriminator | Better texture quality, fewer params |
 | L1 loss | L2 (MSE) loss | Sharper edges, less blur |
 | VGG19 | ResNet50 | Proven for perceptual loss, widely used |
 | 256×256 | 512×512 or higher | Balance quality vs compute (fresher project) |
@@ -562,7 +562,7 @@ Future: Train with more extreme cases
 
 4. **PatchGAN Theory:**
    - Receptive field mathematics
-   - Why patch-based is better for ---ures
+   - Why patch-based is better for textures
    - Trade-offs in patch size selection
 
 ---
@@ -573,7 +573,7 @@ Future: Train with more extreme cases
 
 1. ✅ **U-Net with skip connections** - Preserves spatial information
 2. ✅ **Edge-guided input** - Explicit boundary guidance
-3. ✅ **PatchGAN discriminator** - Strong ---ure supervision
+3. ✅ **PatchGAN discriminator** - Strong texture supervision
 4. ✅ **Combined loss function** - Balances realism, accuracy, and quality
 5. ✅ **Balanced learning rates** - Prevents discriminator dominance
 6. ✅ **Adaptive throttling** - Maintains training stability
